@@ -61,7 +61,7 @@ contract RefundVaultExt is Ownable
   }
 
   /**
-    * As an owner I can always refund.
+    * @dev As an owner I can always refund.
     */
   function refundAsOwner(address investor) public onlyOwner {
     uint256 depositedValue = deposited[investor];
